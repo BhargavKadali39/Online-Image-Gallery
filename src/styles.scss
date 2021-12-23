@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+$MyHeight: 100vh;
+
+html,body{
+    padding: 0%;
+    margin: 0%;
+    background: linear-gradient(270deg,rgb(239,191,36),rgb(212, 100, 1),rgb(142, 56, 2));
+}
+
+.cover{
+    height: 100vh;
+    background: linear-gradient(270deg,rgb(239,191,36),rgb(212, 100, 1),rgb(142, 56, 2));
+}
+
+.overview{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-name{
+    position: sticky;
+    top: -1px;
+    height: 50px;
+    width: 100%;
+}
+
+.left-cluster{
+    width: 25%;
+    height: calc(#{$MyHeight} - 50px);
+    background-color: rgb(99, 146, 187);
+}
+
+.middle-img-area{
+    width: 75%;
+    height: calc(#{$MyHeight} - 50px);
+    background-color: rgb(177, 99, 187);
+}
+
+// delete below h1
+h1{
+    margin: 0;
+}
+// overflow-y: scroll;
