@@ -13,9 +13,19 @@
                 <h1>name of the thing</h1>
             </div>
             <div class="left-cluster">
-                <div class="maybe-sometin"></div>
+                <div class="maybe-sometin">
+                    <a [routerLink]="['intro']">intro<p></p></a>
+                    <a [routerLink]="['my-comp']">my-comp<p></p></a>
+                    <input type="checkbox" 
+                    ng-checked="check">
+                    <button ng-click="checkIt()" ng-model='check'>
+                        Click to Check 
+                    </button>
+                </div>
             </div>
-            <div class="middle-img-area"></div>
+            <div class="middle-img-area">
+                <router-outlet></router-outlet>
+            </div>
         </div>
     </div>
 </body>
