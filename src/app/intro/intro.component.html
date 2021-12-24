@@ -1,14 +1,20 @@
-<p>intro works!</p>
-
-
-<div *if>
-
+<div class="master">
+    <p>intro works!</p>
+    <div *ngFor="let user of users" class="images">
+        <p>{{user.name}}</p>
+    </div>
+    <div *ngFor="let item of users" class="images2">
+        <p>{{item.name}}</p>
+        <p>{{item.age}}</p>
+        <p>{{item.joinDate}}</p>
+    </div>
+    <h2>oppp</h2>
+    <pre>
+        {{a}}
+    </pre>
 </div>
+<!-- 
 
-<div class="images">
-    <img src="https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&w=0&h=pCjvUkNlz9_esVvQw2Wgc8VJZBMgJrB0FQmktCA0KYY=" alt="">
-</div>
+https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&w=0&h=pCjvUkNlz9_esVvQw2Wgc8VJZBMgJrB0FQmktCA0KYY=
 
-<pre>
-    {{a}}
-</pre>
+-->
