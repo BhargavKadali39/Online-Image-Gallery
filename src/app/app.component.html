@@ -14,8 +14,13 @@
             </div>
             <div class="left-cluster">
                 <div class="maybe-sometin">
-                    <a [routerLink]="['intro']">intro<p></p></a>
-                    <a [routerLink]="['my-comp']">my-comp<p></p></a>
+                    <a [routerLink]="['Collection1']"><p>collection1</p></a>
+                    <a [routerLink]="['Collection2']"><p>Collection2</p></a>
+                    <a [routerLink]="['Collection3']"><p>collection3</p></a>
+                    <a [routerLink]="['Collection4']"><p>collection4</p></a>
+                    <!-- <p (click)="loadNames(url)">this is click</p> -->
+                    <a [routerLink]="['my-comp']"><p>my-comp</p></a>
+                    <pre>{{i}}</pre>
                 </div>
             </div>
             <div class="middle-img-area">
@@ -25,3 +30,11 @@
     </div>
 </body>
 </html>
+<!-- 
+<a [routerLink]="['intro']">intro<p></p></a>
+<router-outlet></router-outlet> -->
+<!-- <input type="checkbox" 
+ng-checked="check">
+<button ng-click="checkIt()" ng-model='check'>
+    Click to Check 
+</button> -->
