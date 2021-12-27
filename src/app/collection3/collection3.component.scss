@@ -4,14 +4,16 @@ body{
 }
 
 .cover{
+    padding: 70px 0;
     overflow: scroll;
 }
 
 .images{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(255, 221, 127, 0.671);
+    background-color: #7fffd4;
     backdrop-filter: blur(5px);
+    transform: rotate(25deg);
 }
 img{
     max-height: 600px;
